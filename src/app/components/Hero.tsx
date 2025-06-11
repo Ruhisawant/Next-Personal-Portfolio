@@ -47,7 +47,7 @@ export default function Hero() {
           </motion.div>
           
           {/* Subtitle */}
-          <motion.p variants={fadeInUp} transition={{ duration: 0.6, delay: 0.1 }} className='text-xl md:text-2xl lg:text-3xl text-slate-300 mx-auto leading-relaxed text-slate-400 font-semibold'>
+          <motion.p variants={fadeInUp} transition={{ duration: 0.6, delay: 0.1 }} className='text-xl md:text-2xl lg:text-3xl mx-auto leading-relaxed text-slate-400 font-semibold'>
             <span>Full Stack • UI/UX Enthusiast • App Developer</span>
           </motion.p>
           

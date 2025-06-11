@@ -61,7 +61,7 @@ export const FloatingNavbar = ({
           ease: 'easeInOut'
         }}
         className={cn(
-          'flex max-w-fit fixed top-6 right-6 border border-transparent rounded-full shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] backdrop-blur-md z-[5000] px-3 py-2 items-center justify-center space-x-6 border-white/[0.2] bg-[var(--color-bg)]/80 backdrop-blur-sm',
+          'flex max-w-fit fixed top-6 right-6 border rounded-full shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] backdrop-blur-md z-[5000] px-3 py-2 items-center justify-center space-x-6 border-white/[0.2] bg-[var(--color-bg)]/80',
           className
         )}
       >

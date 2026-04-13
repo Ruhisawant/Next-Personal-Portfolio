@@ -1,5 +1,6 @@
 'use client'
 import React, { JSX, useState } from 'react'
+import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/src/utils/cn'
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'motion/react'
@@ -68,7 +69,7 @@ export const FloatingNavbar = ({
         {navItems.map((navItem: any, idx: number) => {
           const active = isActive(navItem.link)
           return (
-            <a
+            <Link
               key={`link=${idx}`}
               href={navItem.link}
               className={cn(
@@ -106,7 +107,7 @@ export const FloatingNavbar = ({
                   }}
                 />
               )}
-            </a>
+            </Link>
           )
         })}
       </motion.div>

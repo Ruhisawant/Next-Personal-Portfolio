@@ -4,6 +4,7 @@ import { projects } from '@/src/contents/projects'
 import { motion } from 'framer-motion'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { fadeInUp, staggerContainer, cardHoverSmall } from '@/src/utils/animations'
+import { withBasePath } from '@/src/utils/basePath'
 
 export default function Projects() {
   return (
@@ -31,7 +32,7 @@ export default function Projects() {
             >
               <div className='relative aspect-video mb-4 rounded-lg overflow-hidden'>
                 <Image
-                  src={project.image}
+                  src={withBasePath(project.image)}
                   alt={project.title}
                   fill
                   className='object-cover'

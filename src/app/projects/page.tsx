@@ -4,6 +4,7 @@ import { projects } from '@/src/contents/projects'
 import { motion } from 'framer-motion'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { fadeInUp, staggerContainer, cardHoverSmall } from '@/src/utils/animations'
+import { withBasePath } from '@/src/utils/basePath'
 
 export default function Projects() {
   return (
@@ -44,7 +45,7 @@ export default function Projects() {
               transition={{ type: 'spring', stiffness: 300 }}
             >
               <Image
-                src={project.image}
+                src={withBasePath(project.image)}
                 alt={project.title}
                 className='object-cover w-full h-full'
                 width={500}

@@ -7,6 +7,7 @@ import { ThemeProvider } from './context/ThemeContext'
 import { FloatingNavbar } from './components/ui/FloatingNavbar'
 import { ThemeToggle } from './components/ui/ThemeToggle'
 import { FaHome, FaUser, FaProjectDiagram, FaEnvelope } from 'react-icons/fa'
+import { withBasePath } from '@/src/utils/basePath'
 import './globals.css'
 
 const geistSans = Geist({
@@ -35,7 +36,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Link href='/' className='fixed top-4 left-4 z-50'>
             <Image
-              src='/logo.png'
+              src={withBasePath('/logo.png')}
               alt='Ruhi&apos;s Logo'
               width={70}
               height={70}

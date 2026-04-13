@@ -45,4 +45,5 @@ npm run build
 npm start
 ```
 
+Built by following the [JavaScript Mastery Next.js Portfolio Tutorial](https://youtu.be/FTH6Dn3AyIQ)
 Thank you for visiting my portfolio!

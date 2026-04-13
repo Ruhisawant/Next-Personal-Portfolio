@@ -16,13 +16,19 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 a {
   transition: all 0.2s ease;
 }
 
 @layer components {
   .container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
   
   .btn {

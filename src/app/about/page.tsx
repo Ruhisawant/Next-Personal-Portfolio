@@ -6,7 +6,7 @@ import { fadeInUp, fadeInDown, fadeIn, staggerContainer, cardHover } from '@/src
 
 export default function About() {
   return (
-    <div className='container max-w-7xl mx-auto py-12'>
+    <div className='container py-12'>
       <motion.h1 
         className='text-4xl font-bold mb-8 text-center'
         {...fadeInDown}
@@ -39,7 +39,7 @@ export default function About() {
           Skills
         </motion.h2>
         <motion.div 
-          className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'
+          className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'
           variants={staggerContainer}
           initial='initial'
           animate='animate'

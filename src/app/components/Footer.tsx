@@ -23,7 +23,7 @@ export default function Footer() {
       <div className='absolute inset-0 -z-5 bg-gradient-to-t from-transparent via-white/50 to-white dark:via-bg/50 dark:to-bg [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]' />
       
       {/* Content container */}
-      <div className='relative z-10 max-w-7xl mx-auto px-6'>
+      <div className='container relative z-10'>
         <div className='flex mt-16 md:flex-row flex-col justify-between items-center gap-6'>
           <p className='md:text-base text-sm md:font-normal font-light text-gray-600 dark:text-gray-400'>
             Copyright © 2025 Ruhi
